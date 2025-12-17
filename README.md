@@ -1,4 +1,4 @@
-# to-do-list Application
+# To Do List Application
 A simple to-do list web app where you can add, delete tasks and clear the list.
 
 In this project, you can add tasks along with their dates, delete individual tasks, and clear the entire list. The tasks are stored using localStorage, so they remain saved even after refreshing the page.
