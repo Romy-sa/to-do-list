@@ -61,3 +61,14 @@ button:active {
 .list-container div {
   padding: 10px;
 }
+
+@media (max-width:768px) {
+  .input-div,
+  .list-container {
+    display: grid;
+    grid-template-columns: 100px 70px 50px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    align-items: center;
+  }
+}
