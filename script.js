@@ -1,9 +1,10 @@
+
+
 const item = document.getElementById("todo-item");
 const date = document.getElementById("todo-date");
 const addBtn = document.getElementById("add-btn");
 const listItems = document.getElementById("list-items");
 const clearBtn = document.getElementById("clear-btn");
-
 
 let list = JSON.parse(localStorage.getItem("list"))  || [];
 
@@ -12,6 +13,7 @@ renderListHTML();
 
 //    Set to-do list item
 addBtn.addEventListener("click", () => {
+  console.log(item.value, date.value)
   if(item.value !== '' && date.value !== '') {
     let itemValue = item.value;
     let dateValue = date.value;
@@ -23,6 +25,10 @@ addBtn.addEventListener("click", () => {
 
     item.value = ``;
     date.value = ``;
+
+    console.log(list);
+  } else {
+    console.log("hjjjj");
   }
 });
 
@@ -39,12 +45,12 @@ function renderListHTML() {
   let todoListHTML = ``;
   list.forEach(element => {
     let html = `
-    <div>
+    <p>
       ${element.itemValue}
-    </div>
-    <div>
+    </p>
+    <p>
       ${element.dateValue}
-    </div>
+    </p>
     <button id="delete-btn" class="delete-btn">
         Delete
     </button>`;
@@ -58,5 +64,4 @@ function renderListHTML() {
       renderListHTML();
     });
   })
-
 }
