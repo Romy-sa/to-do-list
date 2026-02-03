@@ -12,7 +12,7 @@ renderListHTML();
 
 //    Set to-do list item
 addBtn.addEventListener("click", () => {
-  if(item.value ==! '' && date.value ==! '') {
+  if(item.value !== '' && date.value !== '') {
     let itemValue = item.value;
     let dateValue = date.value;
     list.push({itemValue,dateValue});
@@ -58,4 +58,5 @@ function renderListHTML() {
       renderListHTML();
     });
   })
+
 }
