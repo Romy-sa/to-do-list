@@ -23,6 +23,7 @@ h1 {
   display: grid;
   grid-template-columns: minmax(0,3fr) minmax(0,2fr) minmax(0,1fr);
   align-items: center;
+  justify-content: center;
   width: 95%;
   max-width: 480px;
   gap: 10px;
@@ -69,4 +70,11 @@ button:active {
 .clear-btn {
   background-color: darkred;
   margin-top: 40px;
+}
+
+@media (max-width:768px) {
+  .todo-grid {
+    grid-template-columns: minmax(0,2fr) minmax(0,2fr) minmax(0,1fr);
+    gap: 5px;
+  }
 }
