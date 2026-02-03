@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <h1>To-do List</h1>
-  
-    <div class="input-div">
+
+    <div class="todo-grid">
       <input type="text" id="todo-item" placeholder="To-do Item">
-      <input type="date" id="todo-date">
+      <input type="date" class="todo-date" id="todo-date">
       <button id="add-btn" class="add-btn">Add</button>
+
+      <div id="list-items" class="list-container"></div>
     </div>
-  
-    <div id="list-items" class="list-container"></div>
-  
+
     <button id="clear-btn" class="clear-btn">Clear List</button>
-  
+
     <script src="script.js"></script>
   </body>
-
 </html>
-
-
-
