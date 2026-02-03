@@ -62,7 +62,7 @@ button:active {
   padding: 10px;
 }
 
-@media (max-width:768px) {
+@media (max-width:480px) {
   .input-div,
   .list-container {
     display: grid;
@@ -72,3 +72,4 @@ button:active {
     align-items: center;
   }
 }
+
