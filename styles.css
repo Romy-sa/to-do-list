@@ -71,6 +71,7 @@ button:active {
 @media (max-width:480px) {
   .input-div,
   .list-container {
+    width: 350px;
     display: grid;
     grid-template-columns: 130px 130px 60px;
     justify-content: space-between;
@@ -78,6 +79,7 @@ button:active {
     align-items: center;
   }
 }
+
 
 
 
