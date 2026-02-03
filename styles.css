@@ -15,9 +15,13 @@ body {
   margin: 0;
 }
 
+h1 {
+  margin-bottom: 20px;
+}
+
 .input-div input {
   padding: 10px;
-  border: 2px solid rgba(0,0,0,0.6);
+  border: 1px solid rgba(0,0,0,0.8);
   font-size: 15px;
   border-radius: 3px;
 }
@@ -68,12 +72,13 @@ button:active {
   .input-div,
   .list-container {
     display: grid;
-    grid-template-columns: 150px 150px 50px;
+    grid-template-columns: 130px 130px 70px;
     grid-row-gap: 3px;
     grid-column-gap: 3px;
     align-items: center;
   }
 }
+
 
 
 
