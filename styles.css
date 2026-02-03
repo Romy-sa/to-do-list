@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .input-div input {
@@ -71,7 +71,7 @@ button:active {
 @media (max-width:480px) {
   .input-div,
   .list-container {
-    width: 350px;
+    width: 360px;
     display: grid;
     grid-template-columns: 130px 130px 60px;
     justify-content: space-between;
@@ -79,6 +79,7 @@ button:active {
     align-items: center;
   }
 }
+
 
 
 
