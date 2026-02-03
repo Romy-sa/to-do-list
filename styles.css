@@ -73,11 +73,12 @@ button:active {
   .list-container {
     display: grid;
     grid-template-columns: 130px 130px 60px;
-    grid-row-gap: 3px;
+    justify-content: space-between;
     grid-column-gap: 3px;
     align-items: center;
   }
 }
+
 
 
 
